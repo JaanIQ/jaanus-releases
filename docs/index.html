@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaanus AI – KI-gestütztes Coding Tool für Entwickler</title>
+    <meta name="description"
+        content="Jaanus AI steigert deine Produktivität als Entwickler mit KI-Codevervollständigung, Refactoring und Fehlererkennung. Jetzt kostenlos testen.">
+    <link rel="canonical" href="https://volksisi.github.io/jaanus-releases/">
+    <meta property="og:title" content="Jaanus AI – KI-gestütztes Coding Tool für Entwickler">
+    <meta property="og:description"
+        content="Intelligente Code-Vervollständigung, automatisches Refactoring und proaktive Fehlererkennung. Dein KI-Partner für schnelleres, besseres Coden.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://volksisi.github.io/jaanus-releases/">
+    <meta property="og:image" content="https://volksisi.github.io/jaanus-releases/screenshot.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jaanus AI – KI-gestütztes Coding Tool">
+    <meta name="twitter:description"
+        content="Intelligente Code-Vervollständigung, automatisches Refactoring und proaktive Fehlererkennung.">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Jaanus AI",
+  "description": "KI-gestütztes Coding Tool mit Code-Vervollständigung, Refactoring und Fehlererkennung",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Windows",
+  "url": "https://volksisi.github.io/jaanus-releases/"
+}
+</script>
+    <style>
+        html, body { background: #0a0a0c !important; margin: 0 }
+        * { box-sizing: border-box }
+    </style>
+    <style>
+        @view-transition { navigation: auto; }
+        ::view-transition-old(root), ::view-transition-new(root) { animation-duration: 0.15s; }
+    </style>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-hover: #4f46e5;
+            --bg: #0a0a0c;
+            --surface: #111114;
+            --surface-hover: #16161a;
+            --border: rgba(255, 255, 255, 0.08);
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: var(--bg); color: var(--text); font-family: var(--font-main); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+        .hero { padding: 140px 0 80px; text-align: center; }
+        .hero label { display: inline-block; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; color: var(--text-muted); margin-bottom: 1.5rem; }
+        .hero h1 { font-size: clamp(3rem, 8vw, 5rem); font-weight: 700; line-height: 1.1; letter-spacing: -0.04em; margin-bottom: 24px; color: #fff; }
+        .hero p { font-size: 1.25rem; color: var(--text-muted); max-width: 700px; margin: 0 auto 40px; line-height: 1.5; }
+        .cta-btn { display: inline-flex; align-items: center; justify-content: center; padding: 0.8rem 2.2rem; background: #fff; color: #000; text-decoration: none; border-radius: 6px; font-size: 0.95rem; font-weight: 500; transition: all 0.2s; }
+        .cta-btn:hover { background: #e5e5e5; transform: translateY(-1px); }
+        .hero-muted { display: block; margin-top: 16px; font-size: 0.9rem; color: #555; text-decoration: none; }
+        .features { padding: 100px 0; }
+        .section-header { text-align: center; margin-bottom: 64px; }
+        .section-header h2 { font-size: 2.5rem; font-weight: 700; margin-bottom: 12px; }
+        .section-header p { color: var(--text-muted); font-size: 1.1rem; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+        .feature-card { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 32px; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); position: relative; cursor: pointer; }
+        .feature-card:hover { background: var(--surface-hover); border-color: rgba(255,255,255,0.15); transform: translateY(-4px); }
+        .feature-card .feature-icon { width: 48px; height: 48px; background: rgba(99,102,241,0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--primary); margin-bottom: 24px; }
+        .feature-card h3 { font-size: 1.35rem; font-weight: 600; margin-bottom: 12px; display: flex; align-items: center; justify-content: space-between; }
+        .feature-card p { color: var(--text-muted); font-size: 1rem; line-height: 1.6; }
+        .feature-card .card-expanded { display: none; margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.06); font-size: 0.95rem; line-height: 1.7; color: var(--text-muted); animation: expandIn 0.25s ease; }
+        .feature-card.open .card-expanded { display: block; }
+        .feature-card .card-arrow { float: right; font-size: 14px; color: #888; transition: transform 0.25s ease; margin-top: 2px; }
+        .feature-card.open .card-arrow { transform: rotate(180deg); color: #666; }
+        @keyframes expandIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
+        .bottom-cta { padding: 100px 0; text-align: center; background: radial-gradient(circle at center, rgba(99,102,241,0.05) 0%, transparent 70%); }
+        .bottom-cta h2 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; }
+        .bottom-cta p { color: var(--text-muted); font-size: 1.15rem; max-width: 600px; margin: 0 auto 32px; }
+        .bottom-muted { margin-top: 16px; font-size: 0.9rem; color: #555; }
+        footer { padding: 48px 0; border-top: 1px solid var(--border); text-align: center; color: #444; font-size: 0.9rem; }
+        @media (max-width: 768px) { .hero { padding: 100px 0 60px; } .section-header h2, .bottom-cta h2 { font-size: 2rem; } }
+    </style>
+</head>
+
+<body>
+    <section class="hero">
+        <div class="container">
+            <label>Agentic Intelligence</label>
+            <h1>Unleash your Agents.</h1>
+            <p>Jaanus is the operating system for intelligent coding workflows, visual chains, and total local control.</p>
+            <a href="https://github.com/VolksIsi/jaanus-releases/releases/latest/download/Jaanus-Setup-Windows.exe"
+                class="cta-btn" id="download-cta">Download for Windows (.exe)</a>
+            <a href="https://github.com/VolksIsi/jaanus-releases/releases" class="hero-muted" target="_blank" rel="noopener">View all releases →</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Everything you need. Nothing you don't.</h2>
+                <p>Built for developers who want control, not abstractions.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" onclick="this.classList.toggle('open')">
+                    <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg></div>
+                    <h3>AI Coding Agent <span class="card-arrow">▼</span></h3>
+                    <p>Direct filesystem access and terminal control. Run your agents where your code lives, with no cloud middleman.</p>
+                    <div class="card-expanded">Stop pasting snippets into browser windows. Jaanus executes shell commands, edits source files, and debugs in your native environment. It handles npm install, runs your test suite, and fixes the broken lines in one go. You get a teammate with full root access, not just a text generator.</div>
+                </div>
+                <div class="feature-card" onclick="this.classList.toggle('open')">
+                    <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="3" width="6" height="6" rx="1"/><rect x="9" y="15" width="6" height="6" rx="1"/><line x1="6" y1="9" x2="6" y2="12"/><line x1="18" y1="9" x2="18" y2="12"/><line x1="6" y1="12" x2="12" y2="18"/><line x1="18" y1="12" x2="12" y2="18"/></svg></div>
+                    <h3>Visual Flow Editor <span class="card-arrow">▼</span></h3>
+                    <p>Drag-and-drop agentic logic. Build multi-step automation chains without writing a single line of orchestration code.</p>
+                    <div class="card-expanded">Connect web search nodes to file analyzers and code generators in seconds. Map data between steps to build complex RAG pipelines or automated refactoring loops visually. Iterate on your workflow logic by swapping nodes instead of refactoring hundreds of lines of glue code.</div>
+                </div>
+                <div class="feature-card" onclick="this.classList.toggle('open')">
+                    <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+                    <h3>Dual-Intelligence <span class="card-arrow">▼</span></h3>
+                    <p>Claude plans, Gemini executes. Use high-reasoning models for architecture and fast-inference models for the heavy lifting.</p>
+                    <div class="card-expanded">Stop wasting expensive tokens on boilerplate generation. Jaanus lets Claude architect your solution while Gemini Flash handles the verbose implementation details. They share the same context window and work in tandem to ship features faster.</div>
+                </div>
+                <div class="feature-card" onclick="this.classList.toggle('open')">
+                    <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="7" y="2" width="10" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg></div>
+                    <h3>Computer Use <span class="card-arrow">▼</span></h3>
+                    <p>Vision loop for UI debugging. Give your agents eyes to inspect layouts, detect CSS bugs, and verify frontend changes.</p>
+                    <div class="card-expanded">Stop trying to describe visual bugs in text. Jaanus takes screenshots of your application, analyzes the render, and identifies alignment issues or broken components automatically. The agent sees exactly what your users see.</div>
+                </div>
+                <div class="feature-card" onclick="this.classList.toggle('open')">
+                    <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.5 2a2.5 2.5 0 0 1 5 0v.5a2.5 2.5 0 0 1-5 0V2z"/><path d="M4 12a8 8 0 1 1 16 0"/><path d="M12 12v6"/><path d="M8 18h8"/></svg></div>
+                    <h3>Brain Memory <span class="card-arrow">▼</span></h3>
+                    <p>Persistent project memory. Jaanus learns your tech stack, coding standards, and past architectural decisions.</p>
+                    <div class="card-expanded">No more re-explaining your directory structure or library choices every time you start a new task. Jaanus automatically extracts key facts from your workflow and stores them locally. Your tools should get smarter the more you use them.</div>
+                </div>
+                <div class="feature-card" onclick="this.classList.toggle('open')">
+                    <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+                    <h3>Self-Hosted <span class="card-arrow">▼</span></h3>
+                    <p>Your keys, your machine. A private Electron environment that works with any provider or local LLM.</p>
+                    <div class="card-expanded">Keep your source code off third-party servers. Jaanus runs entirely on your hardware, connecting directly to providers via your own API keys or local Ollama instances. No middleman, no telemetry, no forced subscription.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bottom-cta">
+        <div class="container">
+            <h2>Stop copy-pasting from chat windows.</h2>
+            <p>Jaanus works directly in your files. One install, your keys, your machine.</p>
+            <a href="https://github.com/VolksIsi/jaanus-releases/releases/latest/download/Jaanus-Setup-Windows.exe"
+                class="cta-btn" id="download-cta-2">Download for Windows (.exe)</a>
+            <a href="https://github.com/VolksIsi/jaanus-releases/releases" class="hero-muted" target="_blank" rel="noopener">View all releases →</a>
+            <div class="bottom-muted">Windows · Electron app · No subscription · Your API keys</div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            &copy; 2025 JaanIQ. Built for people who ship.
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('click', function(e) {
+            var a = e.target.closest('a[href]');
+            if (!a) return;
+            var href = a.getAttribute('href');
+            if (!href || href.startsWith('#') || href.startsWith('javascript') || href.startsWith('mailto')) return;
+            document.documentElement.style.background = '#0a0a0c';
+            document.body.style.background = '#0a0a0c';
+        });
+    </script>
+</body>
+</html>
