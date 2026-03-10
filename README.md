@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/screenshot.png" alt="Jaanus AI Dashboard" width="800"/>
+<img src="docs/app-screenshot.png" alt="Jaanus AI Dashboard" width="800"/>
 
 # Jaanus
 
