@@ -62,7 +62,7 @@ One panel for everything: API keys, model settings, plugins, flows deployment, s
 ## Quick Start
 
 1. Download and run the installer
-2. Open `http://localhost:3000` in your browser
+2. Launch Jaanus from the desktop shortcut or Start Menu
 3. Add your API key (Claude, Gemini, or any supported provider)
 4. Start building
 
