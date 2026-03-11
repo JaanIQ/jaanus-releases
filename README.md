@@ -37,7 +37,10 @@ Switch between Claude (Anthropic), Gemini, GPT-4, Groq, xAI Grok, Mistral, DeepS
 Terminal execution, email (read/send), browser control via Playwright, calendar, and custom plugins. Full sandboxing support.
 
 **Agent Memory**
-Persistent facts, decisions, and patterns across sessions. The agent remembers context so you don't have to repeat yourself.
+Persistent facts, decisions, and patterns across sessions — with UserModel, Milestones, and Conflict Detection. View and edit all memories in the Brain Memory UI panel.
+
+**Desktop App Builder**
+Describe a desktop app → Jaanus generates a full Electron project. Live preview, Export ZIP, Run directly.
 
 **CommandFolio**
 One panel for everything: API keys, model settings, plugins, flows deployment, skills, and the plugin marketplace.
@@ -48,7 +51,7 @@ One panel for everything: API keys, model settings, plugins, flows deployment, s
 
 | Platform | Link |
 |----------|------|
-| Windows (x64) | [Jaanus Setup 1.0.0.exe](https://github.com/JaanIQ/jaanus-releases/releases/latest) |
+| Windows (x64) | [Jaanus Setup 1.1.0-preview.1.exe](https://github.com/JaanIQ/jaanus-releases/releases/latest) |
 | macOS | Coming soon |
 | Linux | Coming soon |
 
