@@ -51,7 +51,7 @@ One panel for everything: API keys, model settings, plugins, flows deployment, s
 
 | Platform | Link |
 |----------|------|
-| Windows (x64) | [Jaanus Setup 1.1.0-preview.1.exe](https://github.com/JaanIQ/jaanus-releases/releases/latest) |
+| Windows (x64) | [Jaanus Setup 1.1.0-preview.1.exe](https://github.com/JaanIQ/jaanus-releases/releases/tag/v1.1.0-preview.1) |
 | macOS | Coming soon |
 | Linux | Coming soon |
 
